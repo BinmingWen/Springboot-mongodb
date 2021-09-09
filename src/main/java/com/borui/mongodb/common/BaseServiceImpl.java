@@ -61,8 +61,6 @@ public class BaseServiceImpl<T> implements BaseService<T> {
     @Override
     public T insert(T t) {
         T save = mongoRepository.save(t);
-        System.out.println("触发事务回滚操作");
-        int i = 1/0;
         return save;
     }
 
