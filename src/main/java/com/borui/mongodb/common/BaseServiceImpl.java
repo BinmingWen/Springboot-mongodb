@@ -58,6 +58,7 @@ public class BaseServiceImpl<T> implements BaseService<T> {
     }
 
 
+    @Transactional
     @Override
     public T insert(T t) {
         T save = mongoRepository.save(t);

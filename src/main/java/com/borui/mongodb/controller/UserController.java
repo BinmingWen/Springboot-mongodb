@@ -4,6 +4,7 @@ import com.borui.mongodb.entities.JsonResult;
 import com.borui.mongodb.entities.User;
 import com.borui.mongodb.service.UserService;
 import com.borui.mongodb.utils.Page;
+import lombok.extern.slf4j.Slf4j;
 import org.springframework.beans.factory.annotation.Autowired;
 import org.springframework.data.mongodb.core.query.Criteria;
 import org.springframework.data.mongodb.core.query.Query;
@@ -21,7 +22,7 @@ import java.util.List;
  * @company: 广州博瑞信息技术股份有限公司
  * @create: 2021/9/7 15:27
  */
-
+@Slf4j
 @RestController
 public class UserController {
     @Autowired
